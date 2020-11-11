@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="fav1.png">
+
+<style>
+body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 10px;
+   margin-top:-15px;
+   margin-bottom:-55px;
+}
+
+
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+  margin-top:-12px;
+  margin-bottom:-5px;
+}
+
+
+.col-75 {
+  -ms-flex: 75%; 
+  flex: 75%;
+}
+
+
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: linen;
+  padding: 5px 20px 15px 20px;
+  border: 3px solid #dc5415;
+  border-radius:0px 0px 3px 3px;
+  overflow-x: hidden;
+  margin-top:-0.7%;
+}
+
+input[type=text], select, textarea ,[type="email"],[type="date"],[type=password],[type=tel]{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  /*background-color: #45a049*/
+  background-color: #dc5415;
+  border: 2px solid #555555;
+  color: solid black;
+  padding: 12px 23px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+#G_pay{
+width:20px;
+height:100px;
+float:right;
+margin-left:-100%;
+margin-right:30%;
+margin-top:2%;}
+
+#paytm{
+width:20px;
+height:100px;
+float:right;
+margin-right:-200%;
+margin-top:2%;}
+
+#pay{
+margin-right:-400%
+}
+#hint{
+margin-right:-40%;
+margin-top:-3%;
+}
+#head{
+background-color:#dc5415;
+border-radius: 3px 3px 0px 0px;
+}
+</style>
+</head>
+
+<body>
+
+<div id="head">
+<h2><center>Wlecome To Billing Section<center></h2>
+</div>
+
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="billing_server.php" method="post">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="FullName" placeholder="John M. Doe" required>
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="email" id="email" name="Email" placeholder="john@example.com" required>
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="Address" placeholder="542 W. 15th Street" required>
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="City" placeholder="New York" required>
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="State" placeholder="NY" required>
+              </div>
+              <div class="col-50">
+                <label for="zip">Mobile</label>
+                
+				<input type="tel" id="M_no" name="Mobile" placeholder="9876543210" max="10" pattern="^\d{10}$" required>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+				
+            <div id="pay"><center><h3>Payment method's</h3></center></div>
+			<div id="G_pay"><p>*For_Gpay</p><img src="payments/G_pay.jpg" alt="G_pay"  style="width:270px ; height:300px"></div>
+			<div id="paytm"><p>*For_Paytm</p><img src="payments/paytm.jpg" alt="paytm"  style="width:270px ; height:300px"></div>
+            
+			
+          </div>
+          
+        </div>
+		
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+		<center><p id="hint">For the payments just scan and and pay the full amount</p></center>
+        <input type="submit" value="Continue to checkout" class="btn">
+      </form>
+    </div>
+  </div>
+
+
+ 
+</div>
+
+</body>
+</html>

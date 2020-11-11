@@ -1,0 +1,149 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Customer registration page</title>
+<link rel="shortcut icon" type="image/png" href="fav1.png">
+
+<style>
+body {
+  
+ /* background-color: linen;*/
+  background-image:url('pic1.png');
+background-size: 100% 100%;
+background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+
+h1 {
+  
+  margin-left: 400px;
+  margin-right: 500px;
+  color:maroon;
+} 
+table{
+background-color:linen;
+padding:35px;
+width:550px; 
+hight=800px;
+margin-top:-7%;
+border-radius:0px 0px 15px 15px;
+}
+caption{
+background-color:#dc5415;
+color:maroon;
+padding:15px;
+font-size:200%;
+border-radius:15px 15px 0px 0px;
+ }
+
+#sub{
+  background-color: #dc5415;
+  border: 2px solid #555555;
+  color: solid black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+input[type=text], select, textarea ,[type="email"],[type="date"],[type=password],[type=tel]{
+	 
+	 //width:170px ; 
+	 //height:30px
+	 margin-bottom: 20px;
+	 padding: 6px;
+	 border: 1px solid #ccc;
+	 border-radius: 15px;
+}
+
+
+/*html { overflow-y: hidden; }
+#upper{
+margin-bottom:1550px;} 
+
+#upper{
+float:top;
+margin-bottom:550px;}
+
+#U_name,Password{
+border-style: dotted;}*/
+</style>
+
+</head>
+
+
+<body>
+
+
+
+<table align='center'><form action="cus.php" method="post">
+ <caption><strong>Customer Registration Page</strong></caption>
+
+<tr>
+<td><label for="F name">User Name<strong>:<strong></label></td>
+<td>&nbsp; <input type="text"  name="UserName" id="U_name" placeholder="Enter your User Name" required></td>
+</tr>
+
+<tr><td><br></td></tr>
+
+<tr>
+<td><label for ="Password">Password &nbsp;&nbsp;<b>:</b> </label></td>
+<td>&nbsp;&nbsp;<input type ="password" name="Password" id="Password" placeholder="Enter your password"  required /></td> 
+</tr>
+
+<tr><td><br></td></tr>
+
+<tr>
+<td><label for="F name"> First Name <b>:</b></label></td>
+<td>&nbsp <input type="text" name="FirstName" id="F name" placeholder="Enter your first Name" required></td><br>
+</tr>
+
+<tr> <td>&nbsp;</td> </tr>
+
+<tr>
+<td><label for ="L name">Last Name <b>:</b></label></td>
+<td>&nbsp <input type="text" name="LastName" id="L name" placeholder="Enter your last Name" required></td><br>
+</tr>
+
+<tr> <td>&nbsp;</td> </tr>
+
+<tr>
+<td><label for ="email"> E-mail &nbsp &nbsp&nbsp &nbsp <b>:</b></label></td>
+<td>&nbsp <input type="email" name="Email" id="email" placeholder="Enter your Email" requried style="width:205px; hight:40px" required></td><br>
+</tr>
+<tr> <td>&nbsp;</td> </tr>
+<tr>
+<td><label for="M_no">Mobile No <b>:</b></label></td>
+<td>&nbsp; <!--&nbsp; <input type="text" name="country code"  value="+91" size="2"/>-->
+ <input type="tel" id="M_no" name="Mobile" placeholder="Enter your mobile number" max="10" pattern="^\d{10}$"  style="width:205px; hight:40px" required></td><br>
+</tr>
+
+<tr> <td>&nbsp;</td> </tr>
+
+<tr>
+<td><label for ="adres">Address &nbsp &nbsp <b>:</b></label></td>
+<td>&nbsp <textarea id="adres" name="Address" placeholder="Enter your address" rows="5" cols="50 maxlength="250" required></textarea></td><br>
+</tr>
+
+
+
+
+</table>
+
+<br><br><center><form><input type="submit" id="sub" value="Submit"> &nbsp
+<input type="reset" id="sub" value="Reset"></form></center>
+</form>
+
+</body>
+</html>
+<!--<br><br><center><form><input type="submit" id="sub" value="Submit"> &nbsp
+<input type="reset" id="sub" value="Reset"></form></center>
+
+
+
+</body>
+</html>-->

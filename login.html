@@ -1,0 +1,115 @@
+<html>
+<title>login page</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="fav1.png">
+<style>
+body{
+ background-image:url('pic2.jpg');
+ background-color:transparent !important ;}
+ 
+#container{
+height:400px;
+width:450px;
+background-color:linen;
+#background-color:transparent;
+margin:0px auto;
+margin-top:5%;
+border-radius:15px;}
+
+#details{
+margin-left:10%;
+margin-top:10%;}
+
+#container h1{
+margin-top:2%;
+color:maroon;
+}
+
+#head{
+background-color:#dc5415;
+border-radius:15px 15px 0px 0px;
+}
+
+
+hr {width:auto; margin-left: auto;margin-right: auto;}
+
+#sub{
+
+color:yellow;
+background-color: #dc5415;
+  border: 2px solid #555555;
+  color: solid black;
+  padding: 8px 16px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  margin: -2px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+input[type=text],[type=password] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+
+#container p a{
+	
+	text-decoration:none;
+	color: red;
+	background-color:yellow;
+}
+
+
+
+
+</style></head>
+
+
+<body>
+<div id="container">
+
+<div id="head">
+<br><h1><center><b>Login From</b></center></h1><hr>
+</div>
+
+<form action="login_server.php" method="post">
+
+<div id="details">
+<table><tr>
+
+
+<label for ="Username">Username &nbsp &nbsp :</label> &nbsp&nbsp
+<input type ="text"  placeholder="UserName" name="UserName" id="product_price" style="width:190px ; height:30px" required /><br><br>
+
+<label for ="Password">Password &nbsp &nbsp : </label>&nbsp &nbsp
+<input type = "password"  placeholder="P@$$W0rd" name="Password" id="psd" style="width:190px ; height:30px" required /><br>
+</tr>
+
+</table>
+
+
+
+</div>
+
+
+
+
+<br><br><center><input type="submit" id="sub" value="Submit"> &nbsp &nbsp
+<input type="reset" id="sub"></form>
+
+<br><br><p><b>Not registered? </b><a href="cus reg.html"><b>Create an account </b></a></p>
+</center>
+
+</div>
+
+</body>
+
+
+
+</html>
+
